@@ -1,0 +1,31 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 2016
+  },
+  "rules": {
+    "brace-style": [2, "1tbs"],
+    "complexity": [2, 7], //[2, 5],
+    "no-debugger": 1, // Permite debugger -> diferentes configuraciones segun entorno ¿? ¿?
+    "eqeqeq": 2, // require to use === instead of == //1
+    "max-statements": [2, { "max": 15 }, { "ignoreTopLevelFunctions": true }], //[2, 10], //Paco-> Lo he cambiado para poder commitearlo, estaba en 10 y peta en comparador.rastreator.com/project/assets/components/asesor/phone-banner.js
+    "max-statements-per-line": [2, {"max": 5}],
+    "max-nested-callbacks": [2, 5], // [2, 4],
+    "max-depth": [2, {"max": 5}],
+    "max-lines": [2, 300], // numero de lineas por fichero ¿? ¿?
+    "no-console": 1, // Permite console.log -> diferentes configuraciones segun entorno ¿? ¿?
+    "no-eval": 2, //2
+    "no-return-assign": 0,
+    "no-param-reassign": 2, //¿?¿?
+    "no-undef": 0, // ¿? ¿?
+    "no-unneeded-ternary": 2, //2
+    "no-var": 2,
+    "prefer-const": 2, //2
+    "yoda": 2,
+    "no-empty": 2,
+    "no-unused-vars": 1,
+    "no-redeclare": 2,
+    "no-constant-condition": 2,
+    // "semi": [2, "never"] // semicolons ;
+  }
+}
