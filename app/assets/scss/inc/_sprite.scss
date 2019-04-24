@@ -1,0 +1,143 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$logo-confianza-online-name: 'logo-confianza-online';
+$logo-confianza-online-x: 88px;
+$logo-confianza-online-y: 34px;
+$logo-confianza-online-offset-x: -88px;
+$logo-confianza-online-offset-y: -34px;
+$logo-confianza-online-width: 161px;
+$logo-confianza-online-height: 32px;
+$logo-confianza-online-total-width: 432px;
+$logo-confianza-online-total-height: 122px;
+$logo-confianza-online-image: 'main-sprite.png';
+$logo-confianza-online: (88px, 34px, -88px, -34px, 161px, 32px, 432px, 122px, 'main-sprite.png', 'logo-confianza-online', );
+$logo-confused-name: 'logo-confused';
+$logo-confused-x: 249px;
+$logo-confused-y: 34px;
+$logo-confused-offset-x: -249px;
+$logo-confused-offset-y: -34px;
+$logo-confused-width: 100px;
+$logo-confused-height: 18px;
+$logo-confused-total-width: 432px;
+$logo-confused-total-height: 122px;
+$logo-confused-image: 'main-sprite.png';
+$logo-confused: (249px, 34px, -249px, -34px, 100px, 18px, 432px, 122px, 'main-sprite.png', 'logo-confused', );
+$logo-ekomi-name: 'logo-ekomi';
+$logo-ekomi-x: 0px;
+$logo-ekomi-y: 34px;
+$logo-ekomi-offset-x: 0px;
+$logo-ekomi-offset-y: -34px;
+$logo-ekomi-width: 88px;
+$logo-ekomi-height: 88px;
+$logo-ekomi-total-width: 432px;
+$logo-ekomi-total-height: 122px;
+$logo-ekomi-image: 'main-sprite.png';
+$logo-ekomi: (0px, 34px, 0px, -34px, 88px, 88px, 432px, 122px, 'main-sprite.png', 'logo-ekomi', );
+$logo-lelynx-name: 'logo-lelynx';
+$logo-lelynx-x: 88px;
+$logo-lelynx-y: 66px;
+$logo-lelynx-offset-x: -88px;
+$logo-lelynx-offset-y: -66px;
+$logo-lelynx-width: 100px;
+$logo-lelynx-height: 18px;
+$logo-lelynx-total-width: 432px;
+$logo-lelynx-total-height: 122px;
+$logo-lelynx-image: 'main-sprite.png';
+$logo-lelynx: (88px, 66px, -88px, -66px, 100px, 18px, 432px, 122px, 'main-sprite.png', 'logo-lelynx', );
+$logo-rastreator-name: 'logo_rastreator';
+$logo-rastreator-x: 0px;
+$logo-rastreator-y: 0px;
+$logo-rastreator-offset-x: 0px;
+$logo-rastreator-offset-y: 0px;
+$logo-rastreator-width: 432px;
+$logo-rastreator-height: 34px;
+$logo-rastreator-total-width: 432px;
+$logo-rastreator-total-height: 122px;
+$logo-rastreator-image: 'main-sprite.png';
+$logo-rastreator: (0px, 0px, 0px, 0px, 432px, 34px, 432px, 122px, 'main-sprite.png', 'logo_rastreator', );
+$spritesheet-width: 432px;
+$spritesheet-height: 122px;
+$spritesheet-image: 'main-sprite.png';
+$spritesheet-sprites: ($logo-confianza-online, $logo-confused, $logo-ekomi, $logo-lelynx, $logo-rastreator, );
+$spritesheet: (432px, 122px, 'main-sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url( #{$base-img-dir}/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+@mixin rtr-sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+  background-repeat: no-repeat;
+}
+
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

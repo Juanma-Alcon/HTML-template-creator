@@ -23,7 +23,6 @@ const es = require('event-stream')
 
 // Contants - variables - define distribution folder
 const dist = '../dist';
-const distCore = './assets/core-framework/dist';
 
 const filesName = 'main';
 const styleOpts = {
@@ -37,30 +36,23 @@ const isProduction = args.env === 'prod'
 const withFramework = args.framework === 'true'
 
 //* IMPORT GULP TASKS
-const lintComp = require('./gulp_comps/lint')
-const notify = require('./gulp_comps/notify')
-const imagesModule = require('./gulp_comps/images')
-
-// core-framework tasks
-const styleComp = require('./assets/core-framework/gulp_comps/styles')
-const scriptComp = require('./assets/core-framework/gulp_comps/scripts')
-
-// Copy dist files from core
-gulp.task('copy-core-framework', () => {
-  fs.copy('./assets/core-framework/dist', '../dist', function(err) {
-    if (err) return console.error(err)
-    console.log('Framework Copied :)')
-  })
-})
-
-// Check CanIUse task
-gulp.task('doiuse', lintComp.doIUseLint)
+const lintComp = require('./gulp_components/lint')
+const imagesModule = require('./gulp_components/images')
+const fontsModule = require('./gulp_components/fonts')
+const styleComp = require('./gulp_components/styles')
+const scriptComp = require('./gulp_components/scripts')
 
 // Optimize and generate fonts task
 gulp.task('images', imagesModule.imagesTask)
 
 // Optimize and generate sprite images
 gulp.task('sprite', imagesModule.spriteTask)
+
+// Generate and copy fonts from framework
+gulp.task('fonts', () => {
+  fontsModule.iconFontTask();
+  fontsModule.copyFonts();
+})
 
 // Style tasks
 gulp.task('style', () => {
@@ -72,7 +64,7 @@ gulp.task('style', () => {
 gulp.task('script', () => {
   lintComp.scriptLintFunc();
   scriptComp.scriptsMain();
-  scriptComp.scriptsCore(dist);
+  scriptComp.scriptsCore();
 })
 
 // HTML GULP TASK
@@ -88,10 +80,11 @@ gulp.task('html', () => {
     .pipe(gulp.dest('../dist'));
 });
 
+/* REVISAR */
 // WATCH GULP TASK
 gulp.task('watch', () => {
   gulp.watch(
-    ['./assets/scss/**/*.scss', './assets/core-framework/assets/scss/**/*.scss'], ['style', 'doiuse']
+    ['./assets/scss/**/*.scss', './assets/core-framework/assets/scss/**/*.scss'], 'style'
   )
   gulp.watch(
     ['./assets/js/main.js',
@@ -108,16 +101,18 @@ gulp.task('watch', () => {
   )
 })
 
+/* REVISAR */
 gulp.task('precommit', () => {
   lintComp.sassLintFunc(true)
   lintComp.scriptLintFuncPrecommit()
 })
 
+/* REVISAR */
 gulp.task('default', gulpSequence(
   ['sprite', 'style', 'script'],
-  'copy-core-framework', 'html', 'images', 'doiuse', 'watch'
+  'copy-core-framework', 'html', 'images', 'watch'
 ))
 isProduction && gulp.task('build', gulpSequence(
   ['sprite', 'style', 'script'],
-  'copy-core-framework', 'html', 'images', 'doiuse'
+  'copy-core-framework', 'html', 'images'
 ))
