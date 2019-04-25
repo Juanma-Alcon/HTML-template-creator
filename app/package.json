@@ -13,7 +13,7 @@
     "symlink-core-framework": "cd core/core-framework && gulp symlink",
     "clone-core-components": "git clone git@bitbucket.org:rastreator/core-component-statics.git core/core-components",
     "start-core-components": "cd core/core-components && npm install && gulp build --env=prod",
-    "start-product": "npm run clone-core-framework && npm run start-core-framework && npm run symlink-core-components && npm run clone-core-components && npm run start-core-components",
+    "start-product": "npm run clone-core-framework && npm run start-core-framework && npm run symlink-core-framework && npm run clone-core-components && npm run start-core-components",
     "precommit": "gulp precommit"
   },
   "author": "Rastreator Front End",
