@@ -1,6 +1,7 @@
 /* eslint-disable */
 const gulp = require('gulp')
 const glob = require('glob')
+const globArray = require('glob-array')
 const gulpif = require('gulp-if')
 const babelify = require('babelify')
 const uglify = require('gulp-uglify')
@@ -12,16 +13,10 @@ const notify = require('./notify')
 const merge = require('merge-stream')
 
 const main_files = glob.sync(
-  './assets/js/main.js',
-  './assets/js/components/**/*.js'
+  './assets/js/**/*.js'
 );
 
-const core_files = glob.sync(
-  './core/core-components/app/assets/js/main.js',
-  './core/core-components/app/assets/js/**/*.js',
-  './core/core-framework/assets/js/main.js',
-  './core/core-framework/assets/js/**/*.js'
-);
+const core_files = globArray.sync( ['./core/core-framework/assets/js/**/*.js','./core/core-components/app/assets/js/**/*.js'] );
 
 module.exports = {
   scriptsMain: () => {

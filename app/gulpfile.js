@@ -95,12 +95,12 @@ gulp.task('watch', () => {
     [ './assets/js/main.js',
       './assets/js/components/**/*.js',
       './assets/js/components/**/*.hbs',
+      './core/core-framework/assets/js/main.js',
+      './core/core-framework/assets/js/inc/**/*.js',
+      './core/core-framework/assets/js/inc/**/*.hbs',
       './core/core-components/app/assets/js/main.js',
       './core/core-components/app/assets/js/components/**/*.js',
-      './core/core-components/app/assets/js/components/**/*.hbs',
-      './core/core-framework/assets/js/main.js',
-      './core/core-framework/assets/js/components/**/*.js',
-      './core/core-framework/assets/js/components/**/*.hbs'
+      './core/core-components/app/assets/js/components/**/*.hbs'
     ], ['script']
   );
   gulp.watch(
