@@ -1,0 +1,33 @@
+{{!-- pages/shadows.hbs --}}
+
+{{#> layouts/base title="Shadows" }}
+
+  {{!-- Let's change the hero image for this layout. --}}
+  {{#*inline "content-block"}}
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="test-shadows">
+            <h1>Shadows</h1>
+            <div class="shadows">
+              <div class="shadow-1"><p>Shadow 1</p></div>
+              <div class="shadow-2"><p>Shadow 2</p></div>
+              <div class="shadow-3"><p>Shadow 3 <span>(modales)</span></p></div>
+              <div class="shadow-4"><p>Shadow 4 <span>(placeholder)</span></p></div>
+              <div class="shadow-5"><p>Shadow 5 <span>(forms)</span></p></div>
+              <div class="shadow-6"><p>Shadow 6</p></div>
+              <div class="shadow-7"><p>Shadow 7</p></div>
+              <div class="shadow-8"><p>Shadow 8</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  {{/inline}}
+
+  {{!-- Let's change the hero image for this layout. --}}
+  {{#*inline "footer-block"}}{{/inline}}
+
+{{/layouts/base}}

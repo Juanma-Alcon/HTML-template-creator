@@ -1,0 +1,613 @@
+{{!-- pages/cj_searchers.hbs --}}
+
+{{#> layouts/base title="Search Model Input" }}
+
+  {{#*inline "content-block"}}
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Brand Searcher</h1>
+          {{> includes/cj/cj_search_brand_input }}
+          {{> includes/cj/cj_search_model_input }}
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Country Searcher</h1>
+          {{> includes/cj/cj_search_country_input }}
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Buttons</h1>
+          <button class="btn solid-main">Button</button><br/>
+          <button class="btn solid-main small">Button</button><br/>
+          <button class="btn solid-secondary">Button</button><br/>
+          <button class="btn solid-secondary small">Button</button><br/>
+          <button class="btn positive-line">Button</button><br/>
+          <button class="btn positive-line small">Button</button><br/>
+          <button class="btn help"><div class="btn-wrapper"><span class="icon icon-question-circle"></span>Button</div></button><br/>
+          <button class="btn help small"><div class="btn-wrapper"><span class="icon icon-question-circle"></span>Button</div></button><br/>
+          <button class="btn with-icon"><div class="btn-wrapper"><span class="icon icon-order"></span>Button</div></button><br/>
+          <button class="btn with-icon small"><div class="btn-wrapper"><span class="icon icon-order"></span>Button</div></button><br/>
+          <div class="red-test">
+            <button class="btn negative-line">Button</button><br/>
+            <button class="btn negative-line small">Button</button><br/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Dividers</h1>
+          <h3>Divider Horizontal</h3>
+          <div class="divider"></div>
+          <h3>Divider Vertical</h3>
+          <div class="divider vertical"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Inputs</h1>
+          <h3>Text Input</h3>
+          <div class="form-control input">
+            <input type="text" name="input" placeholder="Default Input" class="text-input">
+            <p class="error-txt">Error message text</p>
+          </div>
+          <h3>Text Input with Error</h3>
+          <div class="form-control input">
+            <input type="text" name="input" placeholder="Default Input" class="text-input error">
+            <p class="error-txt">Error message text</p>
+          </div>
+          <h3>Text Input with Label</h3>
+          <div class="form-control input">
+            <label for="input">Address</label>
+            <input type="text" name="input" placeholder="Default Input" class="text-input">
+          </div>
+          <h3>Text Input with magic label</h3>
+          <div class="form-control input-placeholder-to-label">
+            <label class="has-float-label">
+              <input type="email" placeholder="email@example.com"/>
+              <span>Email</span>
+            </label>
+          </div>
+          <h3>Text Input with magic label - NEGATIVE</h3>
+          <div class="red-test">
+            <div class="form-control input-placeholder-to-label negative">
+              <label class="has-float-label">
+                <input type="email" placeholder="email@example.com"/>
+                <span>Email</span>
+              </label>
+            </div>
+          </div>
+          <h3>Text Input with magic label error</h3>
+          <div class="form-control input-placeholder-to-label">
+            <label class="has-float-label error">
+              <input type="email" placeholder="email@example.com" value="email@example.com"/>
+              <span>Email</span>
+            </label>
+            <p class="error-txt">Error message text</p>
+          </div>
+          <h3>Textarea with magic label</h3>
+          <div class="form-control input-placeholder-to-label">
+            <label class="has-float-label">
+              <textarea placeholder="Mensaje" cols="5" rows="3"></textarea>
+              <span>Mensaje</span>
+            </label>
+          </div>
+          <div class="red-test">
+          <h3>Textarea with magic label negative</h3>
+            <div class="form-control input-placeholder-to-label negative">
+              <label class="has-float-label">
+                <textarea placeholder="Mensaje" cols="5" rows="3"></textarea>
+                <span>Mensaje</span>
+              </label>
+            </div>
+          </div>
+          <h3>Textarea with magic label + error</h3>
+            <div class="form-control input-placeholder-to-label">
+              <label class="has-float-label">
+                <textarea placeholder="Mensaje" cols="5" rows="3"></textarea>
+                <span>Mensaje</span>
+              </label>
+              <p class="error-txt">Error message text</p>
+            </div>
+          </div>
+          <h3>Text Input + Negative</h3>
+          <div class="red-test">
+            <div class="form-control input negative">
+              <input type="text" name="input" placeholder="Default Input" class="text-input">
+            </div>
+          </div>
+          <h3>Text Input + Positive</h3>
+          <div class="red-test">
+            <div class="form-control input positive">
+              <input type="text" name="input" placeholder="Default Input" class="text-input">
+            </div>
+          </div>
+          <h3>Input with Icon</h3>
+          <div class="input-with-icon">
+            <span class="icon icon-search"></span>
+            <input type="text" placeholder="Marca de la moto" name="cj_bike_brand">
+          </div>
+          <h3>Dropdown</h3>
+          <div class="form-control select">
+            <div class="select-wrapper">
+              <select>
+                <option value="">Select input</option>
+                <option>Opción 1</option>
+                <option>Opción 2</option>
+                <option>Opción 3</option>
+                <option>Opción 4</option>
+              </select>
+            </div>
+          </div>
+          <h3>Dropdown with label</h3>
+          <div class="form-control select">
+            <label>Selecciona una opción</label>
+            <div class="select-wrapper">
+              <select>
+                <option value="">Select input</option>
+                <option>Opción 1</option>
+                <option>Opción 2</option>
+                <option>Opción 3</option>
+                <option>Opción 4</option>
+              </select>
+            </div>
+          </div>
+
+          <h3>Dropdown with error</h3>
+          <div class="form-control select error">
+            <div class="select-wrapper">
+              <select>
+                <option value="">Select input</option>
+                <option>Opción 1</option>
+                <option>Opción 2</option>
+                <option>Opción 3</option>
+                <option>Opción 4</option>
+              </select>
+            </div>
+            <p class="error">Ha habido algun error aqui.</p>
+          </div>
+
+          <h3>Dropdown with error and label</h3>
+          <div class="form-control select error">
+            <label>Selecciona una opción</label>
+            <div class="select-wrapper">
+              <select>
+                <option value="">Select input</option>
+                <option>Opción 1</option>
+                <option>Opción 2</option>
+                <option>Opción 3</option>
+                <option>Opción 4</option>
+              </select>
+            </div>
+            <p class="error">Ha habido algun error aqui.</p>
+          </div>
+
+          <h3>Selector without subtitle</h3>
+          <div class="selector-wrapper">
+            <div class="form-control selector">
+              <label class="selector-wrapper">
+                <input type="radio" name="demo" checked>
+                <div class="card-selector shadow-5">
+                  <span class="title">Selected 1</span>
+                </div>
+              </label>
+            </div>
+            <div class="form-control selector">
+              <label class="selector-wrapper">
+                <input type="radio" name="demo">
+                <div class="card-selector shadow-5">
+                  <span class="title">Selected 2 prueba prueba prueba prueba prueba pepito julian yoga</span>
+                </div>
+              </label>
+            </div>
+            <div class="form-control selector">
+              <label class="selector-wrapper">
+                <input type="radio" name="demo">
+                <div class="card-selector shadow-5">
+                  <span class="title">Selected 3</span>
+                </div>
+              </label>
+            </div>
+            <h3>Selector with subtitle</h3>
+            <div class="selector-wrapper">
+              <div class="form-control selector">
+                <label class="selector-wrapper">
+                  <input type="radio" name="demo3" checked>
+                  <div class="card-selector shadow-5">
+                    <span class="title">
+                      Selected 1
+                      <span class="subtitle">Lorem Ipsum Dolor</span>
+                    </span>
+                  </div>
+                </label>
+              </div>
+              <br/>
+              <div class="form-control selector">
+                <label class="selector-wrapper">
+                  <input type="radio" name="demo3">
+                  <div class="card-selector shadow-5">
+                    <span class="title">
+                      Selected 2 prueba prueba prueba prueba prueba pepito julian yoga
+                      <span class="subtitle">Lorem Ipsum Dolor</span>
+                    </span>
+                  </div>
+                </label>
+              </div>
+              <br/>
+              <div class="form-control selector">
+                <label class="selector-wrapper">
+                  <input type="radio" name="demo3">
+                  <div class="card-selector shadow-5">
+                    <span class="title">
+                      Selected 3
+                      <span class="subtitle">Lorem Ipsum Dolor</span>
+                    </span>
+                  </div>
+                </label>
+              </div>
+              <br/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>Inlined date inputs + dropdown</h3>
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-3">
+          <div class="form-control input">
+            <input type="text" name="input" placeholder="Día" class="text-input inline text-09-d-demibold">
+            <p class="error-txt">Error message text</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="form-control select">
+            <div class="select-wrapper">
+              <select class="inline">
+                <option value="">Mes</option>
+                <option>Enero</option>
+                <option>Febrero</option>
+                <option>Marzo</option>
+                <option>Abril</option>
+                <option>Mayo</option>
+                <option>Junio</option>
+                <option>Julio</option>
+                <option>Agosto</option>
+                <option>Septiembre</option>
+                <option>Octubre</option>
+                <option>Noviembre</option>
+                <option>Diciembre</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-3">
+          <div class="form-control input">
+            <input type="text" name="input" placeholder="Año" class="text-input inline text-09-d-demibold">
+            <p class="error-txt">Error message text</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Radio</h3>
+          <div class="form-control normal-radio">
+            <label>
+              <p>Opción 1</p>
+              <input type="radio" name="demo-radio">
+              <span class="radiomark"><span></span></span>
+            </label>
+          </div>
+          <br/>
+          <div class="form-control normal-radio">
+            <label>
+              <p>Opción 2</p>
+              <input type="radio" name="demo-radio">
+              <span class="radiomark"><span></span></span>
+            </label>
+          </div>
+          <br/>
+          <div class="form-control normal-radio">
+            <label>
+              <p>Opción 3</p>
+              <input type="radio" name="demo-radio">
+              <span class="radiomark"><span></span></span>
+            </label>
+          </div>
+          <div class="form-control normal-radio red-test">
+            <label>
+              <p>Opción 4</p>
+              <input type="radio" name="demo-radio">
+              <span class="radiomark white"><span></span></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Radio with Icon by CSS</h3>
+          <div class="form-control normal-radio-icon">
+            <label class="normal-radio-container">
+              <input type="radio" name="radio-demo">
+              <div class="radiomark-container shadow-5">
+                <div class="oval">
+                  <span class="icon icon-star"></span>
+                </div>
+                <p class="item">Opcion 1</p>
+              </div>
+            </label>
+          </div>
+          <br/>
+          <div class="form-control normal-radio-icon">
+            <label class="normal-radio-container">
+              <input type="radio" name="radio-demo">
+              <div class="radiomark-container shadow-5">
+                <div class="oval">
+                  <span class="icon icon-star"></span>
+                </div>
+                <p class="item">Opcion 2</p>
+              </div>
+            </label>
+          </div>
+          <br/>
+          <div class="form-control normal-radio-icon">
+            <label class="normal-radio-container">
+              <input type="radio" name="radio-demo">
+              <div class="radiomark-container shadow-5">
+                <div class="oval">
+                  <span class="icon icon-star"></span>
+                </div>
+                <p class="item">Opcion 3</p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Radio with Icon by Image</h3>
+          <div class="form-control normal-radio-icon">
+            <label class="normal-radio-container">
+              <input type="radio" name="radio-demo2">
+              <div class="radiomark-container shadow-5">
+                <div class="image">
+                  <img src="img/world.png">
+                </div>
+                <p class="item">Opcion 1</p>
+              </div>
+            </label>
+          </div>
+          <br/>
+          <div class="form-control normal-radio-icon">
+            <label class="normal-radio-container">
+              <input type="radio" name="radio-demo2">
+              <div class="radiomark-container shadow-5">
+                <div class="image">
+                  <img src="img/world.png">
+                </div>
+                <p class="item">Opcion 2</p>
+              </div>
+            </label>
+          </div>
+          <br/>
+          <div class="form-control normal-radio-icon">
+            <label class="normal-radio-container">
+              <input type="radio" name="radio-demo2">
+              <div class="radiomark-container shadow-5">
+                <div class="image">
+                  <img src="img/world.png">
+                </div>
+                <p class="item">Opcion 3</p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Checkbox</h3>
+          <div class="form-control normal-checkbox">
+            <label class="normal-checkbox-container">
+              <input type="checkbox">
+              <div class="checkmark-container">
+                <span class="checkmark"></span>
+                <span>Selector</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Checkbox negative White</h3>
+          <div class="form-control normal-checkbox white red-test">
+            <label class="normal-checkbox-container">
+              <input type="checkbox">
+              <div class="checkmark-container">
+                <span class="checkmark"></span>
+                <span>Selector</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Checkbox negative Orange</h3>
+          <div class="form-control normal-checkbox orange red-test">
+            <label class="normal-checkbox-container">
+              <input type="checkbox">
+              <div class="checkmark-container">
+                <span class="checkmark"></span>
+                <span>Selector</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Normal checkbox</h3>
+          <div class="form-control normal-checkbox-box">
+            <label class="normal-checkbox-container">
+              <input type="checkbox">
+              <div class="checkmark-container shadow-5">
+                <span class="checkmark"></span>
+                <span>Selector</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Captcha Checkbox</h3>
+          <div class="form-control normal-checkbox captcha">
+            <label class="normal-checkbox-container">
+              <input type="checkbox">
+              <div class="checkmark-container">
+                <span class="checkmark"></span>
+                <span>No soy un robot</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Checkbox with Icon - CSS Icon</h3>
+          <div class="form-control normal-checkbox-icon">
+            <label class="normal-checkbox-container">
+              <input type="checkbox">
+              <div class="checkmark-container shadow-5">
+                <span class="checkmark"></span>
+                <div class="oval">
+                  <span class="icon icon-star"></span>
+                </div>
+                <p class="item">Item</p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Checkbox with Icon - Icon Image</h3>
+          <div class="form-control normal-checkbox-icon">
+            <label class="normal-checkbox-container">
+              <input type="checkbox">
+              <div class="checkmark-container shadow-5">
+                <span class="checkmark"></span>
+                <div class="image">
+                  <img src="img/world.png" alt="Icono Imagen">
+                </div>
+                <p class="item">Item</p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Tags (Labels)</h1>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="tag light-blue">Tag</div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="tag yellow">Label</div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="tag dark-blue">Tag Label</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Private Policy</h1>
+          <div class="collapse red-test">
+            <p class="collapse-trigger">Recuerda revisar la información básica de privacidad <span class="icon icon-chevron-down"></span></p>
+            <div class="collapsed">
+              <p>Los datos facilitados a RASTREATOR COMPARADOR CORREDURÍA DE SEGUROS, S.L.U. (C/ Sánchez Pacheco, 85, 28002 de Madrid – DPO <a href="mailto:tusderechos@rastreator.com">tusderechos@rastreator.com</a>) serán tratados para  informarte de las oportunidades profesionales de Rastreator, así como para valorar y gestionar tu solicitud de empleo y, en su caso, llevar a cabo las actuaciones necesarias para la selección y contratación de personal, acciones que has autorizado al hacer click en “Enviar”. Puedes ejercer tu derecho de acceso, rectificación, supresión y oposición, entre otros, dirigiéndote por escrito a  Rastreator al domicilio señalado o a <a href="mailto:candidatos@rastreator.com">candidatos@rastreator.com</a>. Para más información, visita nuestra Política de Privacidad.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Sliders</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal normal modal-help">
+      <span class="icon icon-cancel"></span>
+      <h1>Calculadora de kms anuales</h1>
+      <div class="form-control input">
+        <label for="input">Address</label>
+        <input type="text" name="input" placeholder="Default Input" class="text-input">
+      </div>
+      <button class="btn solid-main">Button</button>
+    </div>
+
+    {{> includes/help_button }}
+
+  {{/inline}}
+
+
+{{/layouts/base}}
