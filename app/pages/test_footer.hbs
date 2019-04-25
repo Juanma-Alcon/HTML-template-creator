@@ -1,0 +1,14 @@
+{{!-- pages/footer.hbs --}}
+
+{{#> layouts/base title="Footer CJ" }}
+
+  {{#*inline "footer-block"}}
+    <h1>Minimal Footer - no legal links</h1>
+    {{> includes/shared/footer/footer-no-legal }}
+    <h1>Footer - with legal links</h1>
+    {{> includes/shared/footer/footer-legal-links }}
+    <h1>Footer - with legal links and collapsible privacy policy</h1>
+    {{> includes/shared/footer/footer-legal-collapse }}
+  {{/inline}}
+
+{{/layouts/base}}

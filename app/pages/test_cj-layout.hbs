@@ -1,0 +1,84 @@
+{{!-- pages/header.hbs --}}
+
+{{#> layouts/base title="CJ Bike Q1" bodyId="cj-product" }}
+
+{{#*inline "content-block"}}
+
+  <div id="cj-wrapper">
+    <div class="flex-column">
+
+      <header id="cj-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-2 col-md-3">
+              {{> includes/cj/question-group-title question-group-title="LA MOTO" }}
+            </div>
+            <div class="col-xs-12 col-sm-10 col-md-6">
+              {{> includes/cj/progress-bar }}
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <div class="card-wrapper">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-3 hidden-xs hidden-sm">
+              {{!-- Bloque ayuda --}}
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+
+              {{!-- Example question card --}}
+              <div class="card shadow-2">
+                <div class="question-wrapper">
+                  <h1 class="text-center without-help">¿De qué marca es la moto?</h1>
+                  <p>Contenido de pruebas...</p>
+                </div>
+                <div class="options-wrapper">
+                  <a href="#" id="prev" class="btn rounded prev">
+                    <span class="hidden-xs">Atrás</span>
+                    <i class="icon icon-chevron-left visible-xs"></i>
+                  </a>
+                  <a href="#" id="next" class="btn solid-main next">Avanzar</a>
+                </div>
+              </div> {{!-- / Example question card - END --}}
+
+              {{!-- Example question card - next question - under --}}
+              <div class="card shadow-2 next">
+                <div class="question-wrapper">
+                  <h1 class="text-center without-help">Siguiente pregunta</h1>
+                  <p>Esta sería la pregunta siguiente ...</p>
+                </div>
+                <div class="options-wrapper">
+                  <a href="#" id="prev" class="btn rounded prev">
+                    <span class="hidden-xs">Atrás</span>
+                    <i class="icon icon-chevron-left visible-xs"></i>
+                  </a>
+                  <a href="#" id="next" class="btn solid-main next">Avanzar</a>
+                </div>
+              </div> {{!-- / Example question card 2 - next question - under - END --}}
+
+              <div class="card shadow-2 empty hidden"></div> {{!-- empty card for animations --}}
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  {{!-- Added help button outside cj-wrapper --}}
+  {{> includes/help_button class="sticky" }}
+
+{{/inline}}
+
+{{!-- Added empty footer --}}
+{{#*inline "footer-block"}}
+  {{> includes/shared/footer/footer-legal-links }}
+{{/inline}}
+
+{{/layouts/base}}

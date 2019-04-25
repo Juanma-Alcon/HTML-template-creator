@@ -1,0 +1,70 @@
+{{!-- pages/header.hbs --}}
+
+{{#> layouts/base title="CJ Bike Q1" bodyId="cj-product" }}
+
+{{#*inline "content-block"}}
+
+  <div id="cj-wrapper">
+    <div class="flex-column">
+
+      <header id="cj-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-2 col-md-3">
+              {{> includes/cj/question-group-title question-group-title="LA MOTO" }}
+            </div>
+            <div class="col-xs-12 col-sm-10 col-md-6">
+              {{> includes/cj/progress-bar }}
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="card-wrapper transitioned">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-xs-12 col-md-6 col-md-offset-3 animation-wrapper">
+              {{!-- Example question card --}}
+              <div class="card shadow-2">
+                <div class="question-wrapper">
+                  <h1 class="text-center without-help text-02-m-light text-01-d-light">¿De qué marca es la moto?</h1>
+                  {{> includes/cj/cj_search_brand_input }}
+                </div>
+              </div>
+
+              <div class="card shadow-2 empty">
+                <div class="question-wrapper">
+                  <h1 class="text-center text-02-m-light text-01-d-light">¿Y el modelo?</h1>
+                  <div class="cj-help-link">
+                    <a class="modal-trigger text-08-m-demibold text-11-demibold" data-trigger-modal="modal-cj-bike-model">¿No estás seguro de cuál es el modelo?</a>
+                  </div>
+                  {{> includes/cj/cj_search_model_input }}
+                </div>
+                <div class="options-wrapper">
+                  <a href="#" id="prev" class="btn rounded prev">
+                    <span class="hidden-xs text-08-d-regular">Atrás</span>
+                    <i class="icon icon-chevron-left visible-xs"></i>
+                  </a>
+                </div>
+              </div> {{!-- empty card for animations --}}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{> includes/cj/modal/bike_dcomercial_modal }}
+      {{> includes/cj/modal/bike_ncilindros_modal }}
+    </div>
+  </div>
+
+  {{!-- Added help button outside cj-wrapper --}}
+  {{> includes/help_button class="sticky" }}
+
+{{/inline}}
+
+{{!-- Added empty footer --}}
+{{#*inline "footer-block"}}
+  {{> includes/shared/footer/footer-legal-links }}
+{{/inline}}
+
+{{/layouts/base}}

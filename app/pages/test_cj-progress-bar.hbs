@@ -1,0 +1,18 @@
+{{!-- pages/header.hbs --}}
+
+{{#> layouts/base title="Pagina Test" }}
+
+{{#*inline "content-block"}}
+
+<div class="container" style="margin-top: 8px;"> <!-- demo div -->
+
+  {{> includes/cj/progress-bar }}
+
+</div>
+
+{{/inline}}
+  
+{{!-- Added empty footer --}}
+{{#*inline "footer-block"}}{{/inline}}
+
+{{/layouts/base}}

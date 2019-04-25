@@ -1,9 +1,7 @@
 #gitignore
 /app/node_modules
-/app/core-components
-/app/core-components/assets/core-framework
+/app/core
 /dist
-/app/stories
 
 #dev Environment
 .vscode

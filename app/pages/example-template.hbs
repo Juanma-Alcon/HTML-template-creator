@@ -1,0 +1,24 @@
+{{!-- pages/example-template.hbs --}}
+
+{{#> layouts/base title="Pagina Test" }}
+
+  {{#*inline "head-block"}}
+    {{!-- Bloque para incluir elementos en <head></head> --}}
+  {{/inline}}
+
+  {{#>inline "content-block"}}
+    {{!--
+      Este bloque se utiliza como contenedor
+      de todos los elementos a imprimir en el html
+    --}}
+  {{/inline}}
+
+  {{#>inline "footer-block"}}
+    {{!-- Bloque para incluir footer --}}
+  {{/inline}}
+
+  {{#>inline "scripts-block"}}
+    {{!-- Bloque para incluir scripts adicionales --}}
+  {{/inline}}
+
+{{/layouts/base}}
