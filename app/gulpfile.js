@@ -121,5 +121,5 @@ gulp.task('default', gulpSequence(
   ['style', 'script'], 'html', 'images', 'watch'
 ))
 isProduction && gulp.task('build', gulpSequence(
-  ['sprite', 'style', 'script'], 'fonts', 'html', 'images'
+  ['sprite', 'style', 'script'], ['fonts'], 'html', 'images'
 ))
