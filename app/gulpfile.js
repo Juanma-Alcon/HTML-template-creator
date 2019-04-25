@@ -72,7 +72,10 @@ gulp.task('html', () => {
   return gulp.src('./pages/**/*.hbs')
     .pipe(handlebars({}, {
       ignorePartials: false,
-      batch: ['./partials']
+      batch: [
+        './partials',
+        './core/core-components/app/partials'
+      ]
     }))
     .pipe(rename({
       extname: '.html'
@@ -80,39 +83,43 @@ gulp.task('html', () => {
     .pipe(gulp.dest('../dist'));
 });
 
-/* REVISAR */
 // WATCH GULP TASK
 gulp.task('watch', () => {
   gulp.watch(
-    ['./assets/scss/**/*.scss', './assets/core-framework/assets/scss/**/*.scss'], 'style'
-  )
+    [ './assets/scss/**/*.scss',
+      './core/core-components/app/assets/scss/**/*.scss',
+      './core/core-framework/assets/scss/**/*.scss'
+    ], ['style']
+  );
   gulp.watch(
-    ['./assets/js/main.js',
+    [ './assets/js/main.js',
       './assets/js/components/**/*.js',
-      './assets/core-framework/assets/js/main.js',
-      './assets/core-framework/assets/js/**/*.js',
-      './assets/js/components/**/*.hbs'
+      './assets/js/components/**/*.hbs',
+      './core/core-components/app/assets/js/main.js',
+      './core/core-components/app/assets/js/components/**/*.js',
+      './core/core-components/app/assets/js/components/**/*.hbs',
+      './core/core-framework/assets/js/main.js',
+      './core/core-framework/assets/js/components/**/*.js',
+      './core/core-framework/assets/js/components/**/*.hbs'
     ], ['script']
-  )
+  );
   gulp.watch(
-    ['./pages/*.hbs', './pages/**/*.hbs',
+    [ './pages/*.hbs',
+      './pages/**/*.hbs',
       './partials/**/*.hbs',
+      './core/core-components/app/partials/**/*.hbs'
     ], ['html']
-  )
+  );
 })
 
-/* REVISAR */
 gulp.task('precommit', () => {
   lintComp.sassLintFunc(true)
   lintComp.scriptLintFuncPrecommit()
 })
 
-/* REVISAR */
 gulp.task('default', gulpSequence(
-  ['sprite', 'style', 'script'],
-  'copy-core-framework', 'html', 'images', 'watch'
+  ['style', 'script'], 'html', 'images', 'watch'
 ))
 isProduction && gulp.task('build', gulpSequence(
-  ['sprite', 'style', 'script'],
-  'copy-core-framework', 'html', 'images'
+  ['sprite', 'style', 'script'], 'fonts', 'html', 'images'
 ))
