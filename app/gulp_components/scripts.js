@@ -17,10 +17,10 @@ const main_files = glob.sync(
 );
 
 const core_files = glob.sync(
-  './core/core-components/app/assets/js/main.js',
-  './core/core-components/app/assets/js/**/*.js',
   './core/core-framework/assets/js/main.js',
-  './core/core-framework/assets/js/**/*.js'
+  './core/core-framework/assets/js/**/*.js',
+  './core/core-components/app/assets/js/main.js',
+  './core/core-components/app/assets/js/**/*.js'
 );
 
 module.exports = {
