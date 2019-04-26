@@ -85,7 +85,7 @@ gulp.task('html', () => {
 
 // WATCH GULP TASK
 gulp.task('watch', () => {
-  gulp.watch(
+  gulp.watch( 
     [ './assets/scss/**/*.scss',
       './core/core-components/app/assets/scss/**/*.scss',
       './core/core-framework/assets/scss/**/*.scss'
