@@ -9,11 +9,13 @@
   },
   "scripts": {
     "clone-core-framework": "git clone git@bitbucket.org:rastreator/core-framework.git core/core-framework",
+    "change-branch-core-framework": "cd core/core-framework && git checkout dev && git pull origin dev",
     "start-core-framework": "cd core/core-framework && npm install",
     "symlink-core-framework": "cd core/core-framework && gulp symlink",
     "clone-core-components": "git clone git@bitbucket.org:rastreator/core-component-statics.git core/core-components",
+    "change-branch-core-components": "cd core/core-components && git checkout dev && git pull origin dev",
     "start-core-components": "cd core/core-components/app && npm install",
-    "start-product": "npm run clone-core-framework && npm run start-core-framework && npm run symlink-core-framework && npm run clone-core-components && gulp build --env=prod",
+    "start-product": "npm run clone-core-framework && npm run change-branch-core-framework && npm run start-core-framework && npm run symlink-core-framework && npm run clone-core-components && npm run change-branch-core-components && gulp build --env=prod",
     "precommit": "gulp precommit"
   },
   "author": "Rastreator Front End",
