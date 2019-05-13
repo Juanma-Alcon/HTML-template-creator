@@ -98,6 +98,6 @@ These partials can be contained in the folder **/partials** of the product or in
 
 # Updating the repositories
 
-All repositories have the branches ** master ** and ** dev ** protected against writing and can only be updated using ** Pull Request ** from BitBucket.
+All repositories have the branches **master** and **dev** protected against writing and can only be updated using ** Pull Request ** from BitBucket.
 
 To be able to update a branch, you must do it from a new branch and ask the administrators for a new PR.
