@@ -93,6 +93,7 @@ gulp.task('watch', () => {
   );
   gulp.watch(
     [ './assets/js/main.js',
+      './assets/js/**/*.js',
       './assets/js/components/**/*.js',
       './assets/js/components/**/*.hbs',
       './core/core-framework/assets/js/main.js',
