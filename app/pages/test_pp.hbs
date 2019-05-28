@@ -1,0 +1,86 @@
+{{!-- pages/test_pp.hbs --}}
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/main_pp.min.css">
+  </head>
+  <body id="price-page">
+    <header>
+      <div class="container">
+        <div class="row header">
+          <div class="header-left">
+            <div class="logo"></div>
+          </div>
+          <div class="header-right">
+            <div class="visible-lg visible-md">
+              <h2 class="subtitle">Seguros de Moto</h2>
+              <h1 class="title">Resultados para tu Lorem ipsum</h1>
+            </div>
+            <div class="visible-sm visible-xs">
+            <div class="selection" (click)="openSelector($event)">
+              <span class="selection-item">Terceros sin asistencia en viaje</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-container visible-sm visible-xs" [data]="filter" (click)="selectFilter($event)">
+        {{> includes/pp/filter }}
+      </div>
+    </header>
+
+    <div id="bike-insurance" class="container bike-insurance">
+      <div class="row stretch">
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+          <div class="filter-container">
+            {{> includes/pp/filter }}
+          </div>
+        </div>
+        <div class="col-lg-offset-1 col-md-offset-1 col-lg-8 col-md-8 col-sm-12 col-xs-12 results">
+          <div class="wrapper">
+            {{> includes/pp/result-resume }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.234" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+            {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden-md hidden-lg help-button-wrapper-mobile">
+      {{> includes/help_button class="sticky" }}
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+            <div class="copyright-wrapper col-xs-12">
+              <p class="copyright">&copy; Copyright Rastreator.com 2019.<br> Todos los Derechos Reservados</p>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/core.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>
