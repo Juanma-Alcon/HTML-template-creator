@@ -24,7 +24,7 @@ const es = require('event-stream')
 // Contants - variables - define distribution folder
 const dist = '../dist';
 
-const filesName = 'main';
+const filesName = ['main', 'main_pp'];
 const styleOpts = {
   processImport: true,
   includePaths: [],
@@ -85,7 +85,7 @@ gulp.task('html', () => {
 
 // WATCH GULP TASK
 gulp.task('watch', () => {
-  gulp.watch( 
+  gulp.watch(
     [ './assets/scss/**/*.scss',
       './core/core-components/app/assets/scss/**/*.scss',
       './core/core-framework/assets/scss/**/*.scss'

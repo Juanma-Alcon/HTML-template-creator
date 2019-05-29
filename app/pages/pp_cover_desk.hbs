@@ -1,0 +1,152 @@
+{{!-- pages/health_cover_desk.hbs --}}
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/main_pp.min.css">
+  </head>
+  <body id="price-page">
+
+    <div class="full slide-left">
+      <div class="overlay show">
+        <div class="dialog">
+
+          <div class="details-page">
+            <div class="coverages-container">
+              <div id="coverage" class="coverage">
+                <div class="details-container">
+                  <div class="header">
+                      <i class="icon icon-arrow-left"></i>
+                      <h1 class="title"></h1>
+                  </div>
+                  <h1>Detalles</h1>
+                  <div class="container">
+
+                    <div class="comparative-details">
+                      <div class="comparative">
+                        <div class="columns detail-wrapper">
+                          {{> includes/pp/comparative-item amount="000" conditions="€/año" }}
+                          {{> includes/pp/comparative-item tag="precio final" tag_class="yellow" amount="000" conditions="€/año" }}
+                          {{> includes/pp/comparative-item amount="000" conditions="€/año" }}
+                        </div>
+                      </div>
+                      <div class="detail-wrapper">
+                        <div class="accordion">
+                          <div class="accordion-item collapse">
+                            <h4 class="collapse-trigger text-07">Condiciones de contratación</h4>
+                            <div class="columns collapsed">
+                              <p>Precio sólo por contratar online.</p>
+                              <p>Este precio cubre desde el 03/05/2018 hasta el próximo 01/05/2019, es decir, te cubrirá por un total de 363 días.</p>
+                              <p>Esta compañía puede necesitar algún dato adicional o realizar comprobaciones adicionales para confirmar tu precio.</p>
+                            </div>
+                          </div>
+                          <div class="accordion-item collapse">
+                            <h4 class="collapse-trigger text-07">Promoción</h4>
+                            <div class="columns collapsed">
+                              <div class="promo">
+                                <div class="promo-item">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="coverage-details-container">
+                  <div class="container">
+
+                    <h1 class="text-01">Coberturas</h1>
+
+                    <div class="coverage-details-wrapper">
+                      {{> includes/pp/coverage-details-item }}
+                      {{> includes/pp/coverage-details-item }}
+                      {{> includes/pp/coverage-details-item }}
+                      {{> includes/pp/coverage-details-item }}
+                      {{> includes/pp/coverage-details-item }}
+                    </div>
+
+                    <div class="price-resume-list">
+
+                      <div class="coverage-details accordion">
+                        <h5 class="title"></h5>
+                        <div class="collapsed">
+                          <div class="coverage-details-item">
+                            <h6 class="subtitle">Terceros con asistencia en viaje</h6>
+                            <div class="columns">
+                              <div class="coverage-details-card">
+                                <span class="check"></span>
+                                <p>56 €</p>
+                              </div>
+                              <div class="coverage-details-card">
+                                <span class="check covered"></span>
+                                <p>62 €</p>
+                              </div>
+                              <div class="coverage-details-card">
+                                <span class="check not-covered"></span>
+                                <p>80 €</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="coverage-details-item">
+                            <h6 class="subtitle">Terceros con asistencia en viaje</h6>
+                            <div class="columns">
+                              <div class="coverage-details-card">
+                                <span class="check"></span>
+                                <p>56 €</p>
+                              </div>
+                              <div class="coverage-details-card">
+                                <span class="check covered"></span>
+                                <p>62 €</p>
+                              </div>
+                              <div class="coverage-details-card">
+                                <span class="check not-covered"></span>
+                                <p>80 €</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="coverage-details-item">
+                            <h6 class="subtitle">Terceros con asistencia en viaje</h6>
+                            <div class="columns">
+                              <div class="coverage-details-card">
+                                <span class="check"></span>
+                                <p>56 €</p>
+                              </div>
+                              <div class="coverage-details-card">
+                                <span class="check covered"></span>
+                                <p>62 €</p>
+                              </div>
+                              <div class="coverage-details-card">
+                                <span class="check not-covered"></span>
+                                <p>80 €</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="goback-btn">
+                    <button>Volver a Resultados</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="js/core.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>

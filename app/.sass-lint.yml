@@ -157,7 +157,7 @@ rules:
   # No Url Protocols
   no-url-protocols: 0
   # No Vendor Prefixes ¿? ¿?
-  no-vendor-prefixes: 2
+  no-vendor-prefixes: 1
   # No Warn
   no-warn: 0
   # One Declaration Per Line
