@@ -1,0 +1,149 @@
+{{!-- pages/test_wl_cj.hbs --}}
+
+{{#> layouts/base_wl title="Página Test" bodyId="cj-product" }}
+
+{{#*inline "content-block"}}
+
+  <div id="cj-wrapper">
+    <div class="flex-column">
+
+      <header id="cj-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-2 col-md-3">
+              {{> includes/cj/question-group-title_wl question-group-title="EL SEGURO" }}
+            </div>
+            <div class="col-xs-12 col-sm-10 col-md-6">
+              <div class="cj-progress-bar">
+                <ul>
+                  <li class="completed">
+                    <div class="group-name hidden-xs">El seguro</div>
+                    <div class="circle">
+                      <span class="number">1</span>
+                      <i class="icon icon-check"></i>
+                    </div>
+                    <div class="progress animate" style="width: 100%;"></div>
+                  </li>
+                  <li class="active">
+                    <div class="group-name hidden-xs">Asegurados</div>
+                    <div class="circle">
+                      <span class="number">2</span>
+                      <i class="icon icon-check"></i>
+                    </div>
+                    <div class="progress"  style="width: 60%;"></div>
+                  </li>
+                  <li>
+                    <div class="group-name hidden-xs">Ya casi está</div>
+                      <div class="circle">
+                        <span class="number">3</span>
+                        <i class="icon icon-check"></i>
+                      </div>
+                      <div class="progress"></div>
+                    </li>
+                  </ul>
+                </div>
+
+               {{!--{{> includes/cj/progress-bar group-1-title="El seguro" group-2-title="Asegurados" group-3-title="Ya casi está"}}--}}
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="card-wrapper">
+        <div class="container">
+          <div class="row">
+
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            {{!-- Example question card --}}
+            <div class="card shadow-2">
+              <div class="question-wrapper">
+                <h1 class="text-center without-help text-02-m-light text-01-d-light">¿Qué tipo de producto estás buscando?</h1>
+                <div class="form-control selector">
+                  <label class="selector-wrapper">
+                    <input type="radio" name="demo3">
+                    <div class="card-selector shadow-5">
+                      <span class="title text-09-d-demibold">
+                        Cuadro médico sin copagos
+                        <span class="subtitle text-09-m-regular">Sin pagar nada por cada visita o consulta, puedes elegir entre todos los centros médicos o profesionales que tienen acuerdos con la aseguradora, es decir, que forman parte de su cuadro médico.</span>
+                      </span>
+                    </div>
+                  </label>
+                </div>
+                <div class="form-control selector">
+                  <label class="selector-wrapper">
+                    <input type="radio" name="demo3">
+                    <div class="card-selector shadow-5">
+                      <span class="title text-09-d-demibold">
+                        Cuadro médico con copagos
+                        <span class="subtitle text-09-m-regular">Pagando un precio por cada visita o consulta, puedes elegir entre todos los centros médicos o profesionales que tienen acuerdos con la aseguradora, es decir, que forman parte de su cuadro médico.</span>
+                      </span>
+                    </div>
+                  </label>
+                </div>
+                <div class="form-control selector">
+                  <label class="selector-wrapper">
+                    <input type="radio" name="demo3">
+                    <div class="card-selector shadow-5">
+                      <span class="title text-09-d-demibold">
+                        Cuadro médico + Reembolso
+                        <span class="subtitle text-09-m-regular">Tienes libre elección de médicos, independientemente de si tienen o no acuerdos con la aseguradora, pero debes pagar por adelantado a aquellos que no se encuentran en el cuadro médico. Después la aseguradora te reembolsará parte de este coste.</span>
+                      </span>
+                    </div>
+                  </label>
+                </div>
+                <div class="form-control selector">
+                  <label class="selector-wrapper">
+                    <input type="radio" name="demo3">
+                    <div class="card-selector shadow-5">
+                      <span class="title text-09-d-demibold">
+                        Producto médico sin hospitalización
+                        <span class="subtitle text-09-m-regular">Pagando una mensualidad reducida, te da acceso a un cuadro médico con precios pactados para cada servicio que utilices sin posibilidad de hospitalización.</span>
+                      </span>
+                    </div>
+                  </label>
+                </div>
+                <div class="form-control selector">
+                  <label class="selector-wrapper">
+                    <input type="radio" name="demo3">
+                    <div class="card-selector shadow-5">
+                      <span class="title text-09-d-demibold">
+                        Dental
+                        <span class="subtitle text-09-m-regular">Incluye exclusivamente tratamientos y servicios dentales.</span>
+                      </span>
+                    </div>
+                  </label>
+                </div>
+                <div class="form-control selector">
+                  <label class="selector-wrapper">
+                    <input type="radio" name="demo3">
+                    <div class="card-selector shadow-5">
+                      <span class="title text-09-d-demibold">
+                        No estoy seguro
+                      </span>
+                    </div>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card shadow-2 empty"></div> {{!-- empty card for animations --}}
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  {{!-- Added help button outside cj-wrapper --}}
+  {{> includes/help_button class="sticky" }}
+
+{{/inline}}
+
+{{!-- Added empty footer --}}
+{{#*inline "footer-block"}}
+  {{> includes/shared/footer/footer-legal-links }}
+{{/inline}}
+
+{{/layouts/base_wl}}
