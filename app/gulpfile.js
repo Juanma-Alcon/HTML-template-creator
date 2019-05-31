@@ -24,7 +24,7 @@ const es = require('event-stream')
 // Contants - variables - define distribution folder
 const dist = '../dist';
 
-const filesName = ['main','main_pp','main_wl'];
+const filesName = ['main','main_pp','main_wl','main_pp_wl'];
 
 const styleOpts = {
   processImport: true,
