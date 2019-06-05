@@ -1,0 +1,1177 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/main_pp_wl.min.css">
+  </head>
+  <body id="price-page">
+    <div class="content">
+
+    <header>
+      <div class="container">
+        <div class="row header">
+          <div class="header-left">
+            <div class="logo"></div>
+          </div>
+          <div class="header-right">
+            <div class="visible-lg visible-md">
+              <h2 class="subtitle">Seguros de Salud</h2>
+              <h1 class="title">Resultados para tu Lorem ipsum</h1>
+            </div>
+            <div class="visible-sm visible-xs">
+            <div class="selection">
+              <span class="selection-item">Cuadro médico sin copago</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-container visible-sm visible-xs" [data]="filter" (click)="selectFilter($event)">
+        <div class="filter">
+          <div class="filter-data">
+        
+            <div class="filter-data-items active">
+              <p class="filter-header">Terceros sin asistencia en viaje</p>
+              <div class="result-info">
+                <div class="amount">
+                  <span class="count">18 </span>
+                  <span class="type"></span>
+                </div>
+                <div class="conditions">
+                  <span>desde</span>
+                  <span class="price-from">18€</span>
+                </div>
+              </div>
+            </div>
+        
+            <div class="filter-data-items">
+              <p class="filter-header">Terceros con asistencia en viaje</p>
+              <div class="result-info">
+                <div class="amount">
+                  <span class="count">000 </span>
+                  <span class="type"></span>
+                </div>
+                <div class="conditions">
+                  <span>desde</span>
+                  <span class="price-from">000€</span>
+                </div>
+              </div>
+            </div>
+        
+            <div class="filter-data-items">
+              <p class="filter-header">Terceros ampliado</p>
+              <div class="result-info">
+                <div class="amount">
+                  <span class="count">000 </span>
+                  <span class="type"></span>
+                </div>
+                <div class="conditions">
+                  <span>desde</span>
+                  <span class="price-from">000€</span>
+                </div>
+              </div>
+            </div>
+        
+            <div class="filter-data-items">
+              <p class="filter-header">Todo riesgo con franquicia</p>
+              <div class="result-info">
+                <div class="amount">
+                  <span class="count">000 </span>
+                  <span class="type"></span>
+                </div>
+                <div class="conditions">
+                  <span>desde</span>
+                  <span class="price-from">000€</span>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        
+          <div class="modify-data hidden-xs">
+            <span class="icon icon-edit"></span>
+            <a href="#">Modificar datos</a>
+          </div>
+          <div class="hidden-xs hidden-sm help-button-wrapper-desktop">
+            <div class="help-button">
+              <button class="help-button-btn btn help">
+                <div class="btn-wrapper">Ayuda<span class="icon icon-question-circle"></span></div>
+              </button>
+              <div class="help-wrapper"><div data-id="help-menu" class="help-container animate help-menu">
+              <div class="help-title">
+                <span class="icon icon-arrow-left invisible"></span>
+                <p class="invisible">Menu</p>
+                <span class="icon icon-cancel"></span>
+              </div>
+              <div class="header">
+                <h1>¡Te ayudamos!</h1>
+                <p class="subtitle">Elige cómo quieres contactar:</p>
+              </div>
+              <div class="menu-item" data-item="callmeback">
+                <span class="text-item">Te llamamos gratis</span>
+                <span class="icon icon-arrow-right"></span>
+              </div>
+              <div class="menu-item" data-id="whatsapp">
+                <span class="text-item">WhatsApp</span>
+                <span class="icon icon-arrow-right"></span>
+              </div>
+              <div class="menu-item" data-id="chat" onclick="SnapEngage.startLink();">
+                <span class="text-item">Chat</span>
+                <span class="icon icon-arrow-right"></span>
+              </div>
+              <div class="menu-item" data-item="email">
+                <span class="text-item">Email</span>
+                <span class="icon icon-arrow-right"></span>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="bike-insurance" class="container bike-insurance">
+      <div class="row stretch">
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+          <div class="filter-container">
+            <div class="filter">
+              <div class="filter-data">
+            
+                <div class="filter-data-items active">
+                  <p class="filter-header">Terceros sin asistencia en viaje</p>
+                  <div class="result-info">
+                    <div class="amount">
+                      <span class="count">18 </span>
+                      <span class="type"></span>
+                    </div>
+                    <div class="conditions">
+                      <span>desde</span>
+                      <span class="price-from">18€</span>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="filter-data-items">
+                  <p class="filter-header">Terceros con asistencia en viaje</p>
+                  <div class="result-info">
+                    <div class="amount">
+                      <span class="count">000 </span>
+                      <span class="type"></span>
+                    </div>
+                    <div class="conditions">
+                      <span>desde</span>
+                      <span class="price-from">000€</span>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="filter-data-items">
+                  <p class="filter-header">Terceros ampliado</p>
+                  <div class="result-info">
+                    <div class="amount">
+                      <span class="count">000 </span>
+                      <span class="type"></span>
+                    </div>
+                    <div class="conditions">
+                      <span>desde</span>
+                      <span class="price-from">000€</span>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="filter-data-items">
+                  <p class="filter-header">Todo riesgo con franquicia</p>
+                  <div class="result-info">
+                    <div class="amount">
+                      <span class="count">000 </span>
+                      <span class="type"></span>
+                    </div>
+                    <div class="conditions">
+                      <span>desde</span>
+                      <span class="price-from">000€</span>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+            
+              <div class="modify-data hidden-xs">
+                <span class="icon icon-edit"></span>
+                <a href="#">Modificar datos</a>
+              </div>
+              <div class="hidden-xs hidden-sm help-button-wrapper-desktop">
+                <div class="help-button">
+                  <button class="help-button-btn btn help">
+                    <div class="btn-wrapper">Ayuda<span class="icon icon-question-circle"></span></div>
+                  </button>
+                  <div class="help-wrapper"><div data-id="help-menu" class="help-container animate help-menu">
+                  <div class="help-title">
+                    <span class="icon icon-arrow-left invisible"></span>
+                    <p class="invisible">Menu</p>
+                    <span class="icon icon-cancel"></span>
+                  </div>
+                  <div class="header">
+                    <h1>¡Te ayudamos!</h1>
+                    <p class="subtitle">Elige cómo quieres contactar:</p>
+                  </div>
+                  <div class="menu-item" data-item="callmeback">
+                    <span class="text-item">Te llamamos gratis</span>
+                    <span class="icon icon-arrow-right"></span>
+                  </div>
+                  <div class="menu-item" data-id="whatsapp">
+                    <span class="text-item">WhatsApp</span>
+                    <span class="icon icon-arrow-right"></span>
+                  </div>
+                  <div class="menu-item" data-id="chat" onclick="SnapEngage.startLink();">
+                    <span class="text-item">Chat</span>
+                    <span class="icon icon-arrow-right"></span>
+                  </div>
+                  <div class="menu-item" data-item="email">
+                    <span class="text-item">Email</span>
+                    <span class="icon icon-arrow-right"></span>
+                  </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-offset-1 col-md-offset-1 col-lg-8 col-md-8 col-sm-12 col-xs-12 results">
+          <div class="wrapper">
+            <div class="result-resume-container">
+              <div class="result-resume">
+                <div class="modify-data hidden-lg hidden-md">
+                  <span class="icon icon-edit"></span>
+                  <a href="#">Modificar datos</a>
+                </div>
+                <div class="result-info">
+                  <div class="amount">
+                    <span class="count">13 </span>
+                    <span class="type">resultados</span>
+                  </div>
+                  <div class="conditions">
+                    <span>desde</span>
+                    <span class="price-from">120€</span>
+                  </div>
+                </div>
+              </div>
+              <div class="divider hidden-sm hidden-xs"></div>
+            </div>
+            <div class="results-list">
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      <p class="tag yellow">precio final</p>
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">4.5</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    <p class="tag yellow">precio final</p>
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        
+                        <p class="price">
+                          <span class="amount">1.234</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price"></span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      <p class="tag yellow">precio final</p>
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">4.4</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    <p class="tag yellow">precio final</p>
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        
+                        <p class="price">
+                          <span class="amount">1.235</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price"></span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">4.3</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">1.236</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price"></span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">4.2</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">1.237</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price"></span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">4.1</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">123</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price"></span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">4.0</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">1.400</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price"></span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">3.9</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">1.543</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price"></span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">3.8</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">1.234</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price"></span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">3.7</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">1.286</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia">Franquicia: 10% valor del siniestro, mínimo 250€</span>
+                        <span class="web_price"></span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">3.6</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">6.532</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price">Precio web</span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">3.5</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">7.834</span>
+                          <span class="conditions">€/año</span>
+                        </p>
+                        <span class="franquicia">Franquicia: 000€</span>
+                        <span class="web_price">Precio web</span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="results-list-content">
+                  <div class="info-block-container">
+                    <div class="info-block">
+                      
+                      <div class="block-wrapper">
+                        <img class="block-logo" src="">
+                        <a href="#" class="link">Comparar coberturas</a>
+                        <div class="ras-review-container">
+                          <div class="ras-review">
+                            <p class="open-modal" data-modal="reviewModal">
+                              Valoración<span class="hidden-xs">Rastreator</span><span class="score">3.4</span><span class="separator">/</span>5
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-block-container">
+                    
+                    <div class="price-block block-wrapper">
+                      <img class="block-logo" src="">
+                      <div class="price-wrapper">
+                        <p class="tag">Desde</p>
+                        <p class="price">
+                          <span class="amount">120</span>
+                          <span class="conditions">€/360 días</span>
+                        </p>
+                        <span class="franquicia"></span>
+                        <span class="web_price">Precio web</span>
+                      </div>
+                      <a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>
+                    </div>
+                  </div>
+                  <div class="options-block-container">
+                    <div class="options-block">
+                      <div class="ras-review-container hidden-lg hidden-md hidden-sm">
+                        <div class="ras-review">
+                          <p class="open-modal" data-modal="reviewModal">
+                            Valoración<span class="hidden-xs">Rastreator</span><span class="score">4,5</span><span class="separator">/</span>5
+                          </p>
+                        </div>
+                      </div>
+                      <div class="block-wrapper">
+                        <div class="app-button">
+                            <div class="phone-button">
+                              <button class="small front">Ver teléfono</button>
+                              <a href="#" class="phone-info back">
+                                <div class="phone-info-data">
+                                  <span class="phone-number">91 000 000</span>
+                                  <span class="ref-number">12345678900000</span>
+                                  <span class="schedule"></span>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="app-button">
+                            <button class="small">Que me llame un agente</button>
+                        </div>
+                        <div class="app-button">
+                            <button class="small link">Ver oferta en la web</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice-container">
+      <div class="notice">
+        <div class="container">
+          <h3 class="title">Importante</h3>
+          <div class="message shadow-1">
+            <h5 class="message-title">Precios</h5>
+            <p>
+              'Los precios nos los facilitan las aseguradoras en tiempo real.
+              No obstante, las compañías pueden necesitar algún dato adicional
+              que haga variar el precio al contratar con la aseguradora. En el
+              caso de que la aseguradora muestre la etiqueta de precio final,
+              este precio será fijo y no variará.'
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden-md hidden-lg help-button-wrapper-mobile">
+      <div class="help-button">
+        <button class="help-button-btn btn help">
+          <div class="btn-wrapper">Ayuda<span class="icon icon-question-circle"></span></div>
+        </button>
+        <div class="help-wrapper"><div data-id="help-menu" class="help-container animate help-menu">
+        <div class="help-title">
+          <span class="icon icon-arrow-left invisible"></span>
+          <p class="invisible">Menu</p>
+          <span class="icon icon-cancel"></span>
+        </div>
+        <div class="header">
+          <h1>¡Te ayudamos!</h1>
+          <p class="subtitle">Elige cómo quieres contactar:</p>
+        </div>
+        <div class="menu-item" data-item="callmeback">
+          <span class="text-item">Te llamamos gratis</span>
+          <span class="icon icon-arrow-right"></span>
+        </div>
+        <div class="menu-item" data-id="whatsapp">
+          <span class="text-item">WhatsApp</span>
+          <span class="icon icon-arrow-right"></span>
+        </div>
+        <div class="menu-item" data-id="chat" onclick="SnapEngage.startLink();">
+          <span class="text-item">Chat</span>
+          <span class="icon icon-arrow-right"></span>
+        </div>
+        <div class="menu-item" data-item="email">
+          <span class="text-item">Email</span>
+          <span class="icon icon-arrow-right"></span>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+            <div class="copyright-wrapper col-xs-12">
+              <p class="copyright">&copy; Copyright Rastreator.com 2019.<br> Todos los Derechos Reservados</p>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <div class="modal show">
+      <div class="overlay">
+        <div class="dialog">
+          <div class="review">
+            <div class="header">
+              <div class="title"></div>
+              <i class="icon icon-cancel"></i>
+            </div>
+            <div class="review-modal">
+              <h4 class="ras-title">Valoración Rastreator</h4>
+              <h1>Puntuación calculada teniendo en cuenta:</h1>
+              <div class="modal-wrapper">
+                <div class="divider"></div>
+                <p>Coberturas incluidas en función a lo indicado en el cuestionario.</p>
+                <div class="divider"></div>
+                <p>Valoración de usuarios<span class="hidden-whitelabel"> de Rastreator</span> tras contactar con esta compañía.</p>
+                <div class="divider"></div>
+                <p>Elección de otros usuarios<span class="hidden-whitelabel"> de Rastreator</span> interesados en este producto y con un perfil afín al tuyo.</p>
+                <div class="divider"></div>
+                <p>Cuando la compañía te garantice este precio como final salvo modificación de datos.</p>
+              </div>
+              <div class="actions-wrapper">
+                <button class="button-cancel">Entendido</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/core.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>

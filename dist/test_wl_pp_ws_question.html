@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Whitelabel - WS - Página Test</title>
+    <meta name="description" content="">
+     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+     <link rel="stylesheet" href="css/main_wl.min.css">
+
+     <link rel="dns-prefetch" href="//tracker.rastreator.com">
+     <link rel="dns-prefetch" href="//www.google-analytics.com">
+     <link rel="dns-prefetch" href="//www.google.com">
+     <link rel="dns-prefetch" href="//googleads.g.doubleclick.net">
+     <link rel="dns-prefetch" href="//www.googletagservices.com">
+     <link rel="dns-prefetch" href="//www.googletagmanager.com">
+     <link rel="dns-prefetch" href="//s.yimg.com">
+     <link rel="dns-prefetch" href="//sp.analytics.yahoo.com">
+     <link rel="dns-prefetch" href="//bat.bing.com">
+     <link rel="dns-prefetch" href="//bat.r.msn.com">
+     <link rel="dns-prefetch" href="//img.rastreator.com">
+
+     <script type='text/javascript' defer="defer" src='https://tracker.rastreator.com/scripts/tracker.min.js?ver=2'></script>
+
+  </head>
+  <body  >
+    <div class="overlay"></div>
+    <div class="overlay-cj"></div>
+  <div class="container wsection">
+    <div class="row">
+      <div class="col-xs-12 modify-title step question">
+        <span class="icon icon-arrow-left"></span>
+        <p class="text-10-m-regular white"></p>
+        <span class="icon icon-cancel"></span>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 wrapper-question">
+        <p class="title-d-section text-06-d-demibold white hidden-xs">1. Datos de la moto</p>
+        <div class="edit-question">
+        <!--- Add content - Customer Journey Question !-->
+        <div class="question-wrapper">
+          <h1 class="text-center without-help text-02-m-light text-01-d-light">¿Dónde aparcas habitualmente por la noche?</h1>
+  
+          <div class="form-control selector">
+            <label class="selector-wrapper">
+              <input type="radio" name="demo">
+              <div class="card-selector shadow-5">
+                  <span class="title text-09-d-demibold">En la calle</span>
+              </div>
+            </label>
+          </div>
+          <div class="form-control selector">
+            <label class="selector-wrapper">
+              <input type="radio" name="demo">
+              <div class="card-selector shadow-5">
+                  <span class="title text-09-d-demibold">En garaje colectivo</span>
+              </div>
+            </label>
+          </div>
+          <div class="form-control selector">
+            <label class="selector-wrapper">
+              <input type="radio" name="demo">
+              <div class="card-selector shadow-5">
+                <span class="title text-09-d-demibold">En garaje individual</span>
+              </div>
+            </label>
+          </div>
+        </div>
+        <!--- End content - Customer Journey Question !-->
+          <button class="btn solid-main">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="js/core.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+    <!-- begin SnapEngage code -->
+    <script type="text/javascript">
+      // custom JS
+      let body = document.querySelector('body');
+      let helpButton = document.querySelector('#help-button');
+      let helpWrapper = document.querySelector('.help-wrapper');
+      let chatBtn = document.querySelector('.menu-item[data-id="chat"]');
+    
+      (function() {
+        var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+        se.src = '//storage.googleapis.com/code.snapengage.com/js/640432e3-3bc9-444f-9b6b-23cb7583d25a.js';
+        var done = false;
+        se.onload = se.onreadystatechange = function() {
+          if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
+            done = true;
+            // Custom JS
+            SnapEngage.getAgentStatusAsync(function (online) {
+              if (!online) {
+                  chatBtn.style.display = 'none';
+              }
+            });
+            SnapEngage.setCallback('Open', function (status) {
+                body.style.overflow = 'auto';
+                helpButton.style.opacity = 1;
+                helpWrapper.classList.remove('in', 'desktop', 'mobile', 'callmeback', 'chat', 'email');
+            });
+          }
+        };
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+      })();
+    </script>
+    <!-- end SnapEngage code -->
+
+  </body>
+</html>
