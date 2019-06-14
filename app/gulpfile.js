@@ -42,6 +42,7 @@ const imagesModule = require('./gulp_components/images')
 const fontsModule = require('./gulp_components/fonts')
 const styleComp = require('./gulp_components/styles')
 const scriptComp = require('./gulp_components/scripts')
+const helpers = require('./gulp_components/helpers')
 
 // Optimize and generate fonts task
 gulp.task('images', imagesModule.imagesTask)

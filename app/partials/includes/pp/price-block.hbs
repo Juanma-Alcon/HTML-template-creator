@@ -1,0 +1,14 @@
+{{#if tag}}<p class="tag {{tag_class}}">{{tag}}</p>{{/if}}
+<div class="price-block block-wrapper">
+  <img class="block-logo" src="{{logo}}">
+  <div class="price-wrapper">
+    {{#unless tag}}<p class="tag">Desde</p>{{/unless}}
+    <p class="price">
+      <span class="amount">{{amount}}</span>
+      <span class="conditions">{{conditions}}</span>
+    </p>
+    <span class="franquicia">{{franchise}}</span>
+    <span class="web_price">{{web_price}}</span>
+  </div>
+  {{#if details}}<a class="hidden-lg hidden-md hidden-sm link">Ver detalles</a>{{/if}}
+</div>
