@@ -1,0 +1,18 @@
+<div class="list-item">
+  <div class="results-list-content">
+    <div class="info-block-container">
+      <div class="info-block">
+        {{#if tag}}<p class="tag {{tag_class}}">{{tag}}</p>{{/if}}
+        <div class="block-wrapper">
+          <img class="block-logo" src="{{logo}}">
+          <a href="#" class="link">Comparar coberturas</a>
+          {{> includes/pp/car-ras-review score=score }}
+        </div>
+      </div>
+    </div>
+    <div class="price-block-container">
+      {{> includes/pp/car-price-block tag_class=tag_class }}
+    </div>
+    {{> includes/pp/car-options-block score=score }}
+  </div>
+</div>

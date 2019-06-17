@@ -1,0 +1,20 @@
+<div class="app-button">
+  {{#if phone}}
+    <div class="phone-button">
+      <button class="small front">Ver teléfono</button>
+      <a href="#" class="phone-info back">
+        <div class="phone-info-data">
+          <span class="phone-number">{{phone_number}}</span>
+          <span class="ref-number">{{ref_number}}</span>
+          <span class="schedule">{{schedule}}</span>
+        </div>
+      </a>
+    </div>
+  {{/if}}
+  {{#if button}}
+    <button class="small">{{button_text}}</button>
+  {{/if}}
+  {{#if link}}
+    <button class="small link">{{link_text}}</button>
+  {{/if}}
+</div>

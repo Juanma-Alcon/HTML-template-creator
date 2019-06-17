@@ -11,7 +11,6 @@
   </head>
   <body id="price-page">
     <div class="content">
-
     <header>
       <div class="container">
         <div class="row header">
@@ -20,7 +19,7 @@
           </div>
           <div class="header-right">
             <div class="visible-lg visible-md">
-              <h2 class="subtitle">Seguros de Moto</h2>
+              <h2 class="subtitle">Seguros de Coche</h2>
               <h1 class="title">Resultados para tu Lorem ipsum</h1>
             </div>
             <div class="visible-sm visible-xs">
@@ -32,7 +31,7 @@
         </div>
       </div>
       <div class="filter-container visible-sm visible-xs" [data]="filter" (click)="selectFilter($event)">
-        {{> includes/pp/filter }}
+        {{> includes/pp/car-filter }}
       </div>
     </header>
 
@@ -40,25 +39,25 @@
       <div class="row stretch">
         <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
           <div class="filter-container">
-            {{> includes/pp/filter }}
+            {{> includes/pp/car-filter }}
           </div>
         </div>
         <div class="col-lg-offset-1 col-md-offset-1 col-lg-8 col-md-8 col-sm-12 col-xs-12 results">
           <div class="wrapper">
-            {{> includes/pp/result-resume }}
+            {{> includes/pp/car-result-resume }}
             <div class="results-list">
-              {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.234" conditions="€/año" franchise="" web_price="" score="4.5" details="y" }}
-              {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" score="4.4" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.236" conditions="€/año" franchise="" web_price="" score="4.3" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.237" conditions="€/año" franchise="" web_price="" score="4.2" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="123" conditions="€/año" franchise="" web_price="" score="4.1" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.400" conditions="€/año" franchise="" web_price="" score="4.0" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.543" conditions="€/año" franchise="" web_price="" score="3.9" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.234" conditions="€/año" franchise="" web_price="" score="3.8" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.286" conditions="€/año" franchise="Franquicia: 10% valor del siniestro, mínimo 250€" web_price="" score="3.7" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="6.532" conditions="€/año" franchise="" web_price="Precio web" score="3.6" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="7.834" conditions="€/año" franchise="Franquicia: 000€" web_price="Precio web" score="3.5" details="y" }}
-              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="120" conditions="€/360 días" franchise="" web_price="Precio web" score="3.4" details="y" }}
+              {{> includes/pp/car-result-list tag="precio final" tag_class="yellow" logo="img/company_logo.png" amount="000" conditions="€/año" franchise="" web_price="" score="4.5" details="y" }}
+              {{> includes/pp/car-result-list tag="precio final" tag_class="yellow" logo="img/company_logo.png" amount="1.235" conditions="€/año" franchise="" web_price="" score="4.4" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="1.236" conditions="€/año" franchise="" web_price="" score="4.3" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="1.237" conditions="€/año" franchise="" web_price="" score="4.2" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="123" conditions="€/año" franchise="" web_price="" score="4.1" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="1.400" conditions="€/año" franchise="" web_price="" score="4.0" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="1.543" conditions="€/año" franchise="" web_price="" score="3.9" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="1.234" conditions="€/año" franchise="" web_price="" score="3.8" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="1.286" conditions="€/año" franchise="Franquicia: 10% valor del siniestro, mínimo 250€" web_price="" score="3.7" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="6.532" conditions="€/año" franchise="" web_price="Precio web" score="3.6" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="7.834" conditions="€/año" franchise="Franquicia: 000€" web_price="Precio web" score="3.5" details="y" }}
+              {{> includes/pp/car-result-list tag="" tag_class="" logo="img/company_logo.png" amount="120" conditions="€/360 días" franchise="" web_price="Precio web" score="3.4" details="y" }}
             </div>
           </div>
         </div>
