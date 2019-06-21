@@ -1,0 +1,15 @@
+image:
+   name: rastreator/oceaniareturns:latest
+   username: $DOCKER_HUB_USERNAME
+   password: $DOCKER_HUB_PASSWORD
+   email: $DOCKER_HUB_EMAIL
+
+pipelines:
+  branches:
+          
+    dev:
+     - step:
+        name: "Actualizar Titan"
+        script:
+          - echo "Conectando con T01_NEW para hacer el puente con Titan"
+          - $VIRGILIO_T01NEW_SSH "$VIRGILIO_T01PUBLIC_SSH './scripts/deploy_titan/cj-front.sh $PRODUCT_NAME'" 
