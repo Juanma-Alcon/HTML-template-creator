@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Modify Data</title>
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+
+    <div class="overlay"></div>
+    <div class="overlay-cj"></div>
+    
+    <div class="container wsection">
+      <div class="row">
+        <div class="col-xs-12 modify-title">
+          <span class="icon icon-arrow-left"></span>
+          <p>TODOS LOS PASOS</p>
+          <span class="icon icon-cancel"></span>
+        </div>
+        <div class="col-sm-2 col-md-3 hidden-xs"></div>
+        <div class="col-xs-12 col-sm-8 col-md-6 wcontainer">
+          <div class="collapse">
+            <p class="collapse-trigger" (click)="showQuestions($event)">1. Datos de la moto<span class="icon icon-arrow-right visible-xs "></span><span class="icon icon-chevron-down hidden-xs"></span></p>
+            <div class="collapsed">
+              <div class="modify-title step">
+                <span class="collapse-horizontal-trigger icon icon-arrow-left "></span>
+                <p>1. Datos de la moto</p>
+                <span class="icon icon-cancel"></span>
+              </div>
+              <ul class="submenu">
+                <li class="question-item">
+                  <div class="title">Marca</div>
+                  <div class="maintext">Honda<i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Modelo</div>
+                  <div class="maintext disabled">Scoopy 125 SH  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i></i><i class="icon icon-cancel"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Cilindrada</div>
+                  <div class="maintext">124  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Tu moto</div>
+                  <div class="maintext disabled">Selecciona tu moto  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-cancel"></i>
+                  </div>
+                  <div class="text-error in">Por favor, selecciona tu moto</span>
+                </li>
+                <li class="question-item">
+                  <div class="title">¿Acabas de comprarla?</div>
+                  <div class="maintext">No, ya la tenía  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Antigüedad y fecha de compra</div>
+                  <div class="maintext">02/2002, 02/2003  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Uso</div>
+                  <div class="maintext">Particular, a diario, fines de...  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Aparcamiento</div>
+                  <div class="maintext">En garaje individual  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Kms anuales</div>
+                  <div class="maintext">Hasta 5.000 Km  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse">
+            <p class="collapse-trigger" (click)="showQuestions($event)">2. Datos del Conductor<span class="icon icon-arrow-right visible-xs "></span><span class="icon icon-chevron-down hidden-xs"></span></p>
+            <div class="collapsed">
+              <div class="modify-title step">
+                <span class="collapse-horizontal-trigger  icon icon-arrow-left"></span>
+                <p>2. Datos del Conductor</p>
+                <span class="icon icon-cancel"></span>
+              </div>
+              <ul class="submenu">
+                <li class="question-item">
+                  <div class="title">Fecha de nacimiento</div>
+                  <div class="maintext">24/04/1990  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Lugar de nacimiento</div>
+                  <div class="maintext">España  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Tipo de carné</div>
+                  <div class="maintext">A (para conducir todo tipo...)  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Fecha de obtención del carné</div>
+                  <div class="maintext">03/2014  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Lugar de obtención del carné</div>
+                  <div class="maintext">España  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Datos del conductor principal</div>
+                  <div class="maintext">Hombre, soltero  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">DNI/NIE</div>
+                  <div class="maintext">02146357P  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Profesión</div>
+                  <div class="maintext">Directivo  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Pasajero</div>
+                  <div class="maintext">Nunca  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Código postal residencia</div>
+                  <div class="maintext">28001  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Titular del seguro</div>
+                  <div class="maintext">El cónyugue del conductor...  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Edad del titular del seguro</div>
+                  <div class="maintext">21 años  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Tipo de carné</div>
+                  <div class="maintext">A (para conducir todo tipo de...  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Edad de obtención</div>
+                  <div class="maintext">18 años  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Sexo y estado civil</div>
+                  <div class="maintext">Mujer, casado/a  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse">
+            <p class="collapse-trigger" (click)="showQuestions($event)">3. Datos del Seguro<span class="icon icon-arrow-right visible-xs "></span><span class="icon icon-chevron-down hidden-xs"></span></p>
+            <div class="collapsed">
+              <div class="modify-title step">
+                <span class="collapse-horizontal-trigger  icon icon-arrow-left"></span>
+                <p>3. Datos del Seguro</p>
+                <span class="icon icon-cancel"></span>
+              </div>
+              <ul class="submenu">
+                <li class="question-item">
+                  <div class="title">Seguro anterior</div>
+                  <div class="maintext">Si  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Compañía</div>
+                  <div class="maintext">Caser  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Vencimiento</div>
+                  <div class="maintext">02/2019  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Antigüedad en la compañía</div>
+                  <div class="maintext">1 año  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+                <li class="question-item">
+                  <div class="title">Información de partes</div>
+                  <div class="maintext">3  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse">
+            <p class="collapse-trigger" (click)="showQuestions($event)">4. Email<span class="icon icon-arrow-right visible-xs "></span><span class="icon icon-chevron-down hidden-xs"></span></p>
+            <div class="collapsed">
+              <div class="modify-title step">
+                <span class="collapse-horizontal-trigger  icon icon-arrow-left"></span>
+                <p>4. Email</p>
+                <span class="icon icon-cancel"></span>
+              </div>
+              <ul class="submenu">
+                <li class="question-item">
+                  <div class="title">Email</div>
+                  <div class="maintext">nombre@email.com  <i class="modal-trigger icon icon-edit" data-trigger-modal="modal-example-edit-question"></i><i class="icon icon-check"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-3">
+          <button class="btn solid-main update">Actualizar <span class="hidden-md hidden-lg">resultados</span></button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal normal edit modal-example-edit-question">
+      <span class="icon icon-cancel"></span>
+      <div class="modal-wrapper">
+        <div class="edit-question">
+                      <h1 class="text-center without-help text-02-m-light text-01-d-light">¿Dónde aparcas habitualmente por la noche?</h1>
+    
+                      <div class="form-control selector">
+                        <label class="selector-wrapper">
+                          <input type="radio" name="demo">
+                          <div class="card-selector shadow-5">
+                            <span class="title text-09-d-demibold">En la calle</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form-control selector">
+                        <label class="selector-wrapper">
+                          <input type="radio" name="demo">
+                          <div class="card-selector shadow-5">
+                            <span class="title text-09-d-demibold">En garaje colectivo</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form-control selector">
+                        <label class="selector-wrapper">
+                          <input type="radio" name="demo">
+                          <div class="card-selector shadow-5">
+                            <span class="title text-09-d-demibold">En garaje individual</span>
+                          </div>
+                        </label>
+                      </div>
+                      <button class="btn solid-main">Guardar</button>
+    
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/core.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>
