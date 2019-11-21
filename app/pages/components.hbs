@@ -555,11 +555,29 @@
         </div>
       </div>
       <h3>Datepicker input</h3>
-      <div class="input-date-wrapper">
+      <div class="datepicker-area">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="form-control input input-date icon icon-calendar">
-              <input type="text" name="daterange" placeholder="Selecciona fechas" value="" class="text-input inline text-09-d-demibold"/>
+              <input type="text" data-type="daterange" placeholder="Selecciona fechas" value="" class="text-input inline text-09-d-demibold"/>
+              <p class="error-txt">Error message text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3>Datepicker input</h3>
+      <p> to make a range date picker, take out single class from "form-control"</p>
+      <div class="datepicker-area">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-control input input-date icon icon-calendar single">
+              <input type="text" data-type="daterange" placeholder="Selecciona fechas" value="" class="text-input inline text-09-d-demibold"/>
+              <p class="error-txt">Error message text</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-control input input-date icon icon-calendar single">
+              <input type="text" data-type="daterange" placeholder="Selecciona fechas" value="" class="text-input inline text-09-d-demibold"/>
               <p class="error-txt">Error message text</p>
             </div>
           </div>
