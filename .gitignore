@@ -1,6 +1,7 @@
 #gitignore
 /app/node_modules
 /app/core
+/dist
 
 #dev Environment
 .vscode
