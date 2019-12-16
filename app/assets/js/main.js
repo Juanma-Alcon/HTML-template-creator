@@ -6,10 +6,10 @@ window.jQuery = $
 
 $(document).ready(() => {
   const views = [
-  //   {
-  //     sect: '.cj-full-searcher', // Selector CSS
-  //     module: require('./components/cj/input/searcher/script') // modulo a ejecutar
-  //   }
+  {
+    sect: '#price-page', // Selector CSS
+    module: require('./pp/script') // modulo a ejecutar
+  }
   ]
 
   _.each(views, (section) => {

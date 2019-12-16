@@ -1,4 +1,4 @@
-{{!-- pages/header.hbs --}}
+{{!-- pages/q1-2-3.hbs --}}
 
 {{#> layouts/base title="CJ Bike Q1" bodyId="cj-product" }}
 
@@ -11,10 +11,13 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-2 col-md-3">
-              {{> includes/cj/question-group-title question-group-title="LA MOTO" }}
+              {{> includes/cj/question-group-title question-group-title="EL SEGURO" }}
             </div>
             <div class="col-xs-12 col-sm-10 col-md-6">
-              {{> includes/cj/progress-bar }}
+              {{> includes/cj/progress-bar group-1-title="El seguro" group-2-title="Asegurados" group-3-title="Ya casi está"}}
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs seo-title">
+              <h1>Comparativa de Seguros de Salud</h1>
             </div>
           </div>
         </div>
@@ -28,14 +31,14 @@
               {{!-- Example question card --}}
               <div class="card shadow-2">
                 <div class="question-wrapper">
-                  <h1 class="text-center without-help text-02-m-light text-01-d-light">¿De qué marca es la moto?</h1>
+                  <h2 class="text-center without-help text-02-m-light text-01-d-light title">¿De qué marca es la moto?</h2>
                   {{> includes/cj/cj_search_brand_input }}
                 </div>
               </div>
 
               <div class="card shadow-2 empty">
                 <div class="question-wrapper">
-                  <h1 class="text-center text-02-m-light text-01-d-light">¿Y el modelo?</h1>
+                  <h2 class="text-center text-02-m-light text-01-d-light title">¿Y el modelo?</h2>
                   <div class="cj-help-link">
                     <a class="modal-trigger text-08-m-demibold text-11-demibold" data-trigger-modal="modal-cj-bike-model">¿No estás seguro de cuál es el modelo?</a>
                   </div>

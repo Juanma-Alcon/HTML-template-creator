@@ -24,7 +24,8 @@ const es = require('event-stream')
 // Contants - variables - define distribution folder
 const dist = '../dist';
 
-const filesName = 'main';
+const filesName = ['main','main_pp','main_wl','main_pp_wl'];
+
 const styleOpts = {
   processImport: true,
   includePaths: [],
@@ -41,6 +42,7 @@ const imagesModule = require('./gulp_components/images')
 const fontsModule = require('./gulp_components/fonts')
 const styleComp = require('./gulp_components/styles')
 const scriptComp = require('./gulp_components/scripts')
+const helpers = require('./gulp_components/helpers')
 
 // Optimize and generate fonts task
 gulp.task('images', imagesModule.imagesTask)
@@ -85,7 +87,7 @@ gulp.task('html', () => {
 
 // WATCH GULP TASK
 gulp.task('watch', () => {
-  gulp.watch( 
+  gulp.watch(
     [ './assets/scss/**/*.scss',
       './core/core-components/app/assets/scss/**/*.scss',
       './core/core-framework/assets/scss/**/*.scss'
@@ -93,6 +95,7 @@ gulp.task('watch', () => {
   );
   gulp.watch(
     [ './assets/js/main.js',
+      './assets/js/**/*.js',
       './assets/js/components/**/*.js',
       './assets/js/components/**/*.hbs',
       './core/core-framework/assets/js/main.js',

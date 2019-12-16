@@ -14,13 +14,15 @@ const notify = require('./notify')
 // const contains = require('gulp-contains')
 
 module.exports = {
-  style: (dist, styleOpts = {}, filesName = "main") => {
-    gulp.src(['./assets/scss/main.scss'])
-      // .pipe(header('$baseImgDir: "' + baseImgDir + '";\n'))
-      .pipe(sass(styleOpts).on('error', (e) => { notify.error(e, 'SASS') }))
-      .pipe(autoprefixer('last 2 versions'))
-      .pipe(minify())
-      .pipe(rename(filesName + '.min.css'))
-      .pipe(gulp.dest(dist + '/css/'))
+  style: (dist, styleOpts = {}, filesName) => {
+    filesName.map(function(file) {
+      gulp.src(['./assets/scss/' + file + '.scss'])
+        // .pipe(header('$baseImgDir: "' + baseImgDir + '";\n'))
+        .pipe(sass(styleOpts).on('error', (e) => { notify.error(e, 'SASS') }))
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(minify())
+        .pipe(rename(file + '.min.css'))
+        .pipe(gulp.dest(dist + '/css/'))
+      });
   }
 }

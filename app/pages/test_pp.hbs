@@ -1,0 +1,136 @@
+{{!-- pages/pp.hbs --}}
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/main_pp.min.css">
+  </head>
+  <body id="price-page">
+    <div class="content">
+
+    <header>
+      <div class="container">
+        <div class="row header">
+          <div class="header-left">
+            <div class="logo"></div>
+          </div>
+          <div class="header-right">
+            <div class="visible-lg visible-md">
+              <h2 class="subtitle">Seguros de Producto</h2>
+              <h1 class="title">Resultados para tu Lorem ipsum</h1>
+            </div>
+            <div class="visible-sm visible-xs">
+            <div class="selection">
+              <span class="selection-item">Terceros sin asistencia en viaje</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-container visible-sm visible-xs" [data]="filter" (click)="selectFilter($event)">
+        {{> includes/pp/filter }}
+      </div>
+    </header>
+
+    <div id="bike-insurance" class="container bike-insurance">
+      <div class="row stretch">
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+          <div class="filter-container">
+            {{> includes/pp/filter }}
+          </div>
+        </div>
+        <div class="col-lg-offset-1 col-md-offset-1 col-lg-8 col-md-8 col-sm-12 col-xs-12 results">
+          <div class="wrapper">
+            {{> includes/pp/result-resume }}
+            <div class="results-list">
+              {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.234" conditions="€/año" franchise="" web_price="" score="4.5" details="y" }}
+              {{> includes/pp/result-list tag="precio final" tag_class="yellow" logo="" amount="1.235" conditions="€/año" franchise="" web_price="" score="4.4" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.236" conditions="€/año" franchise="" web_price="" score="4.3" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.237" conditions="€/año" franchise="" web_price="" score="4.2" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="123" conditions="€/año" franchise="" web_price="" score="4.1" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.400" conditions="€/año" franchise="" web_price="" score="4.0" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.543" conditions="€/año" franchise="" web_price="" score="3.9" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.234" conditions="€/año" franchise="" web_price="" score="3.8" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="1.286" conditions="€/año" franchise="Franquicia: 10% valor del siniestro, mínimo 250€" web_price="" score="3.7" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="6.532" conditions="€/año" franchise="" web_price="Precio web" score="3.6" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="7.834" conditions="€/año" franchise="Franquicia: 000€" web_price="Precio web" score="3.5" details="y" }}
+              {{> includes/pp/result-list tag="" tag_class="" logo="" amount="120" conditions="€/360 días" franchise="" web_price="Precio web" score="3.4" details="y" }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice-container">
+      <div class="notice">
+        <div class="container">
+          <h3 class="title">Importante</h3>
+          <div class="message shadow-1">
+            <h5 class="message-title">Precios</h5>
+            <p>
+              'Los precios nos los facilitan las aseguradoras en tiempo real.
+              No obstante, las compañías pueden necesitar algún dato adicional
+              que haga variar el precio al contratar con la aseguradora. En el
+              caso de que la aseguradora muestre la etiqueta de precio final,
+              este precio será fijo y no variará.'
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden-md hidden-lg help-button-wrapper-mobile">
+      {{> includes/help_button class="sticky" }}
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+            <div class="copyright-wrapper col-xs-12">
+              <p class="copyright">&copy; Copyright Rastreator.com 2019.<br> Todos los Derechos Reservados</p>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <div class="modal">
+      <div class="overlay">
+        <div class="dialog">
+          <div class="review">
+            <div class="header">
+              <div class="title"></div>
+              <i class="icon icon-cancel"></i>
+            </div>
+            <div class="review-modal">
+              <h4 class="ras-title">Valoración Rastreator</h4>
+              <h1>Puntuación calculada teniendo en cuenta:</h1>
+              <div class="modal-wrapper">
+                <div class="divider"></div>
+                <p>Coberturas incluidas en función a lo indicado en el cuestionario.</p>
+                <div class="divider"></div>
+                <p>Valoración de usuarios de Rastreator tras contactar con esta compañía.</p>
+                <div class="divider"></div>
+                <p>Elección de otros usuarios de Rastreator interesados en este producto y con un perfil afín al tuyo.</p>
+                <div class="divider"></div>
+                <p>Cuando la compañía te garantice este precio como final salvo modificación de datos.</p>
+              </div>
+              <div class="actions-wrapper">
+                <button class="button-cancel">Entendido</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/core.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>
