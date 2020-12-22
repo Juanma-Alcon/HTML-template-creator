@@ -75,7 +75,7 @@
     "jquery": "^3.2.1",
     "merge-stream": "^1.0.1",
     "mocha": "^5.2.0",
-    "node-notifier": "^5.4.0",
+    "node-notifier": "^8.0.1",
     "postcss": "^6.0.23",
     "precommit": "^1.2.2",
     "sass-lint": "^1.12.1",
